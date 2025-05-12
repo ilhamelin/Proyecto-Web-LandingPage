@@ -47,6 +47,19 @@
     font-family: 'Tungsten-Bold', sans-serif;
 }
 
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('/src/assets/fonts/MarkPro-Regular.woff2') format('woff2'),
+        url('/src/assets/fonts/MarkPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-mark {
+    font-family: 'Mark Pro', Arial, sans-serif;
+}
+
 .font-inter {
     font-family: 'Inter', sans-serif;
 }
@@ -79,6 +92,22 @@
 }
 
 
+@keyframes fadeIn {
+    0% {
+
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
 
 /* Oculta scrollbar en navegadores modernos */
 .scrollbar-hide {

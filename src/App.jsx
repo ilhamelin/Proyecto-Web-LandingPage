@@ -15,6 +15,7 @@ import { IoMdClose } from "react-icons/io";
 // https://www.reddit.com/r/arcane/comments/v8b6ws/
 // https://htmlcolorcodes.com/es/rgb-a-hex/?r=10&g=10&b=10
 // https://www.arcane.com/es-mx/
+// https://www.onlinewebfonts.com/fonts
 
 // Seccion 1
 import logoArcane from './assets/Arcane-Logo-1.png';
@@ -68,6 +69,18 @@ import Valorant from './assets/imageMap/7157a3af53e8b9a2795f146133e7803e11b1c1d8
 import TeamFightTactic from './assets/imageMap/477ce1d7a875eb99fd00319870bfaad642da220c-1920x1080.jpg';
 import RunaTerra from './assets/imageMap/95f244060cf64373f7b30e9db7edbbd41f705f04-1920x1080.jpg';
 import WildRift from './assets/imageMap/a0d4a04e8059f9e9426b8a8ed7a2b0174886e754-1320x743.jpg';
+import ConvRgence from './assets/imageMap/96d6ec42a3be4ed02195fb31816bb2f188c5121d-1320x743.jpg';
+import HextechMathem from './assets/imageMap/410485481cef2bf4a4a15e2beedf9b929012a0c3-1320x743.jpg';
+import TheMagesseker from './assets/imageMap/02281bbdccf6311df4ae705d099ed45beb42f64e-1920x1080.jpg';
+import RuinedKing from './assets/imageMap/904be9b7fb2dc287fc1a8f30f0421134eed3a35d-1320x743.jpg';
+import SonsOfNunu from './assets/imageMap/8b0fd50a7bbd02b24bc2c5df278b1a556cf0cecf-1320x743.jpg';
+import RiotForgeGames from './assets/imageMap/887a22f93dff0593674b4df1a267b840f85b01e7-1320x743.jpg';
+import LolEsports from './assets/imageMap/8459546a9d8a91074ef7f4ef8e43ebd561d30396-1920x1080.jpg';
+import ValorantEsports from './assets/imageMap/46e6f7f8295ccf1ffa2480d7f0c1b9926204c08f-1920x1080.jpg';
+import Arcane from './assets/imageMap/70361f54e9202cccae3852adebdc567246d83179-1320x743.jpg';
+import Universo from './assets/imageMap/ada5282be4b3fa4225027ac9170014db245deb58-1320x743.jpg';
+import RiotGameMusic from './assets/imageMap/73a9ef5885cacca97a8589c4263d324c290cf536-1320x743.jpg';
+
 
 const gameDetails = {
   'LEAGUE OF LEGENDS': {
@@ -77,30 +90,97 @@ const gameDetails = {
     icon: '🖱️',
   },
   'VALORANT': {
-    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/e003b58a6493371450b6afe73853a9c3ff5149a2-146x55.svg',
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/8eea1401b06cc6ab8e0ebef79866326d6169e1f4-146x98.svg?',
     description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
     image: Valorant,
     icon: '🖱️',
   },
   'TEAMFIGHT TACTICS': {
-    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/e003b58a6493371450b6afe73853a9c3ff5149a2-146x55.svg',
-    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/764f2bdcebd378556494a6eb10135be4e265352c-146x101.svg?',
+    description: 'UNA BATALLA DE INGENIOS PARA ARMAR EQUIPOS',
     image: TeamFightTactic,
     icon: '🖱️',
   },
   'LEGENDS OF RUNATERRA': {
-    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/e003b58a6493371450b6afe73853a9c3ff5149a2-146x55.svg',
-    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/f1a5f3b7368dfc270e62a5a0994cc71377fc067b-146x48.svg?',
+    description: 'DOMINA CADA MOMENTO EN ESTE JUEGO DE CARTAS ESTRATEGICO',
     image: RunaTerra,
     icon: '🖱️',
   },
   'LOL: WILD RIFT': {
-    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/e003b58a6493371450b6afe73853a9c3ff5149a2-146x55.svg',
-    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/1f3220a2d73cfa313e05c224efcdf5dcdc8a3ef4-144x95.svg?',
+    description: 'LEAGUE OF LEGENDS, AHORA PARA DISPOSITIVOS MOVILES',
     image: WildRift,
     icon: '🖱️',
   },
-
+  // FORGE y ESPORTS
+  'CONV/RGENCE': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/52ed2c5cd26fab4d34a7908c90a6c903c410eeba-1600x486.png?',
+    description: 'EXPLORA ZAUN COMO EKKO EN ESTE JUEGO DE PLATAFORMA LLENO DE ACCION',
+    image: ConvRgence,
+    icon: '🖱️',
+  },
+  'HEXTECH MATHEM': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/903b6c2931a1a5e57e60037b2aab2ddcf3225445-262x165.svg?',
+    description: 'RIOT FORGE PRESENTA HEXTECH MAYHEM',
+    image: HextechMathem,
+    icon: '🖱️',
+  },
+  'THE MAGESEEKER': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/47eddbfb9494161a0297c80be917ee6065d1c64b-400x210.png?',
+    description: 'JUEGA COMO SYLAS Y LIBERA DEMACIA DE LA TIRANIA EN ESTE RPG DE ACCION',
+    image: TheMagesseker,
+    icon: '🖱️',
+  },
+  'RUINED KING': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/a4d1eb7a2d3122dfefb2180bd6661448b9ce3cba-406x295.svg?',
+    description: 'VENCE A LA RUINA EN ESTE JUEGO RPG POR TURNOS',
+    image: RuinedKing,
+    icon: '🖱️',
+  },
+  'SONG OF NUNU': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/40c381c01bfaaf46654ab0bc146be3b720fc0606-350x108.png?',
+    description: 'UNA CANCION SIEMPRE VIVIRA',
+    image: SonsOfNunu,
+    icon: '🖱️',
+  },
+  'RIOT FORGE GAMES': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/024a377f9e1c195cab9bb8eee1ea10fdaa7db4d3-54x53.svg?',
+    description: 'EDITOR DE EXPERIENCIAS COMPLETABLES DEL UNIVERSO DE LOL',
+    image: RiotForgeGames,
+    icon: '🖱️',
+  },
+  'LOL ESPORTS': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/8f34104a42ab1e5e4b6251d33ae007ffdab70cba-3997x1000.png?',
+    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    image: LolEsports,
+    icon: '🖱️',
+  },
+  'VALORANT ESPORTS': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/e038e934212b5055a402dbb66e92949e55f6b222-1003x720.png?',
+    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    image: ValorantEsports,
+    icon: '🖱️',
+  },
+  // ENTRETENIMIENTO y NEGOCIOS
+  'ARCANE': {
+    svgTitle: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/b5f67842576be722a65c8f6a50e21bad34b0a294-148x45.svg?',
+    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    image: Arcane,
+    icon: '🖱️',
+  },
+  'UNIVERSO': {
+    svgTitle: "UNIVERSO",
+    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    image: Universo,
+    icon: '🖱️',
+  },
+  'RIOT GAMES MUSIC': {
+    svgTitle: "UNIVERSO",
+    description: 'PRESUME ANTE TUS ENEMIGOS EN ESTE SHOOTER TACTICO 5 CONTRA 5 DEFINITIVA',
+    image: RiotGameMusic,
+    icon: '🖱️',
+  },
 };
 
 const slides = [
@@ -342,31 +422,43 @@ function App() {
                       {/* IMAGEN */}
                       <div className="flex items-center justify-center w-full h-[410px]">
                         {hoveredTitle && gameDetails[hoveredTitle] && (
-                          <div className="flex w-[900px] h-full rounded-lg overflow-hidden shadow-lg bg-[#111] text-white relative">
-                            {/* LADO IZQUIERDO */}
-                            <div className="flex-col grid p-6 w-[30%] z-10">
-                              <div className="w-full flex grid-flow-col justify-items-center">
-                                <img
-                                  src={gameDetails[hoveredTitle].svgTitle}
-                                  alt={`${hoveredTitle} logo`}
-                                  className="w-[250px] h-auto"
-                                />
-                              </div>
-                              <div className="flex-col mt-4 text-center w-full grid grid-flow-col justify-items-end-safe ">
-                                <div>
-                                  <div className="text-sm">{gameDetails[hoveredTitle].description}</div>
-                                  <div className="mt-2 text-lg">{gameDetails[hoveredTitle].icon}</div>
+                          <div className="flex items-center justify-center w-full h-[410px] relative">
+                            <div className="flex w-[900px] h-full rounded-lg overflow-hidden shadow-lg bg-[#111] text-white relative transition-all duration-500">
+                              {/* LADO IZQUIERDO */}
+                              <div className="flex-col grid p-3 w-[30%] z-10 transition-all duration-500 ease-in-out">
+                                <div className="w-full flex justify-center">
+                                  <img
+                                    key={hoveredTitle + "-logo"} // Fuerza re-render para animar
+                                    src={gameDetails[hoveredTitle]?.svgTitle}
+                                    alt={`${hoveredTitle} logo`}
+                                    className="w-[200px] mt-5 ml-5 object-contain h-auto opacity-0 animate-fade-in"
+                                  />
+                                </div>
+                                <div className="flex-col mt-4 text-center w-full">
+                                  <div
+                                    key={hoveredTitle + "-desc"}
+                                    className="text-[12px] leading-[15px] font-mark mt-1 opacity-0 animate-fade-in"
+                                  >
+                                    {gameDetails[hoveredTitle]?.description}
+                                  </div>
+                                  <div
+                                    key={hoveredTitle + "-icon"}
+                                    className="mt-2 text-lg opacity-0 animate-fade-in"
+                                  >
+                                    {gameDetails[hoveredTitle]?.icon}
+                                  </div>
                                 </div>
                               </div>
-                            </div>
 
-                            {/* LADO DERECHO - IMAGEN CON CLIP */}
-                            <div className="w-[70%] h-full relative clip-diagonal">
-                              <img
-                                src={gameDetails[hoveredTitle].image}
-                                alt={hoveredTitle}
-                                className="w-full h-full object-cover"
-                              />
+                              {/* LADO DERECHO - IMAGEN CON CLIP */}
+                              <div className="w-[70%] h-full relative clip-diagonal">
+                                <img
+                                  key={hoveredTitle + "-image"}
+                                  src={gameDetails[hoveredTitle]?.image}
+                                  alt={hoveredTitle}
+                                  className="w-full h-full object-cover opacity-0 animate-fade-in"
+                                />
+                              </div>
                             </div>
                           </div>
                         )}
