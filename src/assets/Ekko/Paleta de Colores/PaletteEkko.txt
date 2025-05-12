@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --anzac: #e1b737;
+--irish-coffee: #643023;
+--hillary: #b2a08b;
+--tamarind: #2b1611;
+--cognac: #a7451c;
+--domino: #967b63;
+--roman-coffee: #7d584a;
+--pharlap: #a48a84;
+--au-chico: #88615d;
+--piper: #c45424;
+
+
+/* SCSS HEX */
+$anzac: #e1b737;
+$irish-coffee: #643023;
+$hillary: #b2a08b;
+$tamarind: #2b1611;
+$cognac: #a7451c;
+$domino: #967b63;
+$roman-coffee: #7d584a;
+$pharlap: #a48a84;
+$au-chico: #88615d;
+$piper: #c45424;
+
+
+/* SCSS RGB */
+--anzac: rgba(225,183,55,1);
+--irish-coffee: rgba(100,48,35,1);
+--hillary: rgba(178,160,139,1);
+--tamarind: rgba(43,22,17,1);
+--cognac: rgba(167,69,28,1);
+--domino: rgba(150,123,99,1);
+--roman-coffee: rgba(125,88,74,1);
+--pharlap: rgba(164,138,132,1);
+--au-chico: rgba(136,97,93,1);
+--piper: rgba(196,84,36,1);
+
+

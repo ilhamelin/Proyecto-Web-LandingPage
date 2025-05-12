@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --pale-slate: #c5bbc3;
+--astronaut: #264f6b;
+--boston-blue: #3d94c0;
+--old-lavender: #766571;
+--thunder: #291d29;
+--horizon: #558ba8;
+--matisse: #1f6fa4;
+--cloud-burst: #1b214b;
+--polo-blue: #88afcd;
+--bazaar: #9c7478;
+
+
+/* SCSS HEX */
+$pale-slate: #c5bbc3;
+$astronaut: #264f6b;
+$boston-blue: #3d94c0;
+$old-lavender: #766571;
+$thunder: #291d29;
+$horizon: #558ba8;
+$matisse: #1f6fa4;
+$cloud-burst: #1b214b;
+$polo-blue: #88afcd;
+$bazaar: #9c7478;
+
+
+/* SCSS RGB */
+--pale-slate: rgba(197,187,195,1);
+--astronaut: rgba(38,79,107,1);
+--boston-blue: rgba(61,148,192,1);
+--old-lavender: rgba(118,101,113,1);
+--thunder: rgba(41,29,41,1);
+--horizon: rgba(85,139,168,1);
+--matisse: rgba(31,111,164,1);
+--cloud-burst: rgba(27,33,75,1);
+--polo-blue: rgba(136,175,205,1);
+--bazaar: rgba(156,116,120,1);
+
+

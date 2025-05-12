@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --dune: #241f1e;
+--silk: #bcb0ac;
+--dove-gray: #766969;
+--tradewind: #4bb0a2;
+--emperor: #524747;
+--oracle: #34796f;
+--cape-cod: #3b4944;
+--mulled-wine: #554867;
+--mamba: #8d809d;
+--rouge: #9c4595;
+
+
+/* SCSS HEX */
+$dune: #241f1e;
+$silk: #bcb0ac;
+$dove-gray: #766969;
+$tradewind: #4bb0a2;
+$emperor: #524747;
+$oracle: #34796f;
+$cape-cod: #3b4944;
+$mulled-wine: #554867;
+$mamba: #8d809d;
+$rouge: #9c4595;
+
+
+/* SCSS RGB */
+--dune: rgba(36,31,30,1);
+--silk: rgba(188,176,172,1);
+--dove-gray: rgba(118,105,105,1);
+--tradewind: rgba(75,176,162,1);
+--emperor: rgba(82,71,71,1);
+--oracle: rgba(52,121,111,1);
+--cape-cod: rgba(59,73,68,1);
+--mulled-wine: rgba(85,72,103,1);
+--mamba: rgba(141,128,157,1);
+--rouge: rgba(156,69,149,1);
+
+

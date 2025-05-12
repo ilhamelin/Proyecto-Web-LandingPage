@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "image": "img2.png",
+        "thumbnail": "iconsJinx.png",
+        "title": "Jinx",
+        "subtitle": "Cuyo verdadero nombre es Powder",
+        "description": "¡Es una de las protagonistas de Arcane . Es la impredecible, ingeniosa y caótica hermana menor de Vi e hija adoptiva de Silco!",
+        "bgColor": "#075184"
+    },
+    {
+        "id": 2,
+        "image": "img1.png",
+        "thumbnail": "iconsVi.png",
+        "title": "Violet",
+        "subtitle": "Comúnmente conocida como Vi",
+        "description": "Es una de las protagonistas de Arcane. Es la hermana mayor de Jinx, decidida, familiar y de carácter irascible, e hija adoptiva de Vander.",
+        "bgColor": "#d52d55"
+    },
+    {
+        "id": 3,
+        "image": "img5.png",
+        "thumbnail": "iconsEkko.png",
+        "title": "Ekko",
+        "subtitle": "Es un personaje importante de Arcane",
+        "description": "Uno de los muchos niños que crecieron en los Caminos.",
+        "bgColor": "#d5cebc"
+    },
+    {
+        "id": 4,
+        "image": "img3.png",
+        "thumbnail": "iconsViktor.png",
+        "title": "Viktor",
+        "subtitle": "También conocido como el Heraldo o el Heraldo de la Máquina",
+        "description": "Fue un personaje principal de Arcane. Ingenioso y valiente, vino de Undercity para convertirse en inventor y creó Hextech junto a su compañero, Jayce Talis.",
+        "bgColor": "#3b3c41"
+    },
+    {
+        "id": 5,
+        "image": "img4.png",
+        "thumbnail": "iconsCaitlyn.png",
+        "title": "Caitlyn Kiramman",
+        "subtitle": "Es una de las protagonistas de Arcane",
+        "description": "Es la hija hábil, decidida y justiciera de Cassandra Kiramman y Tobias Kiramman, y por lo tanto, miembro de la acaudalada e influyente Casa Kiramman.",
+        "bgColor": "#3b3c41"
+    }
+]

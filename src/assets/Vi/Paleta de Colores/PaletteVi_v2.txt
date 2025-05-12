@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --malta: #bead99;
+--baltic-sea: #1d1b1f;
+--tobacco-brown: #715445;
+--taupe: #453a34;
+--waikawa-gray: #5e7aa5;
+--rhino: #344466;
+--stiletto: #a24137;
+--blue-zodiac: #132949;
+--gray-asparagus: #4f544e;
+--battleship-gray: #848c7f;
+
+
+/* SCSS HEX */
+$malta: #bead99;
+$baltic-sea: #1d1b1f;
+$tobacco-brown: #715445;
+$taupe: #453a34;
+$waikawa-gray: #5e7aa5;
+$rhino: #344466;
+$stiletto: #a24137;
+$blue-zodiac: #132949;
+$gray-asparagus: #4f544e;
+$battleship-gray: #848c7f;
+
+
+/* SCSS RGB */
+--malta: rgba(190,173,153,1);
+--baltic-sea: rgba(29,27,31,1);
+--tobacco-brown: rgba(113,84,69,1);
+--taupe: rgba(69,58,52,1);
+--waikawa-gray: rgba(94,122,165,1);
+--rhino: rgba(52,68,102,1);
+--stiletto: rgba(162,65,55,1);
+--blue-zodiac: rgba(19,41,73,1);
+--gray-asparagus: rgba(79,84,78,1);
+--battleship-gray: rgba(132,140,127,1);
+
+

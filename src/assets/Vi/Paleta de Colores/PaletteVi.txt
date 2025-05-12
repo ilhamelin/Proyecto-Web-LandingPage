@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --tan: #d0a88f;
+--emerald: #52c68d;
+--wine-berry: #5e1e1e;
+--leather: #9c765d;
+--gondola: #231413;
+--cerise-red: #d52d55;
+--mexican-red: #a02935;
+--del-rio: #ae9b98;
+--russett: #75555e;
+--chateau-green: #44a464;
+
+
+/* SCSS HEX */
+$tan: #d0a88f;
+$emerald: #52c68d;
+$wine-berry: #5e1e1e;
+$leather: #9c765d;
+$gondola: #231413;
+$cerise-red: #d52d55;
+$mexican-red: #a02935;
+$del-rio: #ae9b98;
+$russett: #75555e;
+$chateau-green: #44a464;
+
+
+/* SCSS RGB */
+--tan: rgba(208,168,143,1);
+--emerald: rgba(82,198,141,1);
+--wine-berry: rgba(94,30,30,1);
+--leather: rgba(156,118,93,1);
+--gondola: rgba(35,20,19,1);
+--cerise-red: rgba(213,45,85,1);
+--mexican-red: rgba(160,41,53,1);
+--del-rio: rgba(174,155,152,1);
+--russett: rgba(117,85,94,1);
+--chateau-green: rgba(68,164,100,1);
+
+

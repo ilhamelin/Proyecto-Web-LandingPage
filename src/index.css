@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@layer components {
+    .slider {
+        @apply grid;
+        grid-template-areas: "slide";
+    }
+
+    .slider-childs {
+        @apply before:absolute before:inset-0 before:bg-gradient-to-b from-transparent to-black;
+        grid-area: slide;
+        transition: .01s clip-path .5s;
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+
+    [data-active] {
+        order: 1;
+        transition: .6s clip-path;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .slider-prev {
+        grid-area: slide;
+        @apply z-[100] self-center justify-self-start;
+    }
+
+    .slider-next {
+        grid-area: slide;
+        @apply z-[100] self-center justify-self-end;
+    }
+
+
+
+
+}
+
+@font-face {
+    font-family: 'Tungsten-Bold';
+    src: url('/src/assets/fonts/Tungsten-Bold.woff2') format('woff2'),
+        url('/src/assets/fonts/Tungsten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-tungsten {
+    font-family: 'Tungsten-Bold', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.clipped-corner {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+}
+
+.clip-diagonal {
+    clip-path: polygon(20% 0%, 60000% 0%, 35% 100%, 8% 90%);
+}
+
+
+.logo-hover svg {
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+}
+
+.logo-hover:hover svg {
+    fill: red;
+}
+
+.logo-hover-dorpdown svg {
+    fill: black;
+    transition: fill 0.2s ease-in-out;
+}
+
+.logo-hover-dorpdown:hover svg {
+    fill: red;
+}
+
+
+
+/* Oculta scrollbar en navegadores modernos */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari y Opera */
+}
+
+
+.image-left {
+    -webkit-mask-image:
+        linear-gradient(to bottom, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to right, black 80%, transparent);
+    -webkit-mask-composite: intersect;
+    mask-composite: intersect;
+    mask-image:
+        linear-gradient(to bottom, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to right, black 80%, transparent);
+
+}
+
+.image-right {
+
+    -webkit-mask-image:
+        linear-gradient(to bottom, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to right, black 80%, transparent);
+    -webkit-mask-composite: intersect;
+    mask-composite: intersect;
+    mask-image:
+        linear-gradient(to bottom, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to right, black 80%, transparent);
+}
+
+.animation-delay-500 {
+    animation-delay: 0.5s;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    scroll-behavior: smooth;
+    /* Para transiciones suaves */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
