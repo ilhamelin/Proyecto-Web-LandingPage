@@ -314,8 +314,8 @@ function App() {
       <section ref={containerRef} className="snap-start min-h-screen bg-[#B0DFE5] flex flex-col relative ">
 
         {/* header */}
-        <div className='fixed top-0 left-0 w-full z-40 bg-[#161616] text-white px-9 py-[26px] shadow-md'>
-          <div className='flex flex-row items-center justify-start gap-4'>
+        <div className='fixed top-0 left-0 w-full z-40 bg-[#161616] text-white px-9 shadow-md'>
+          <div className='flex flex-row items-center justify-start gap-8 py-1.5'>
             <div className='flex'>
               <button onClick={toggleDropdown} className='flex logo-hover items-center'>
                 <svg viewBox="0 0 590 140" width="85px" height="27px" xmlns="http://www.w3.org/2000/svg" fill='white'>
@@ -426,15 +426,15 @@ function App() {
                             <div className="flex w-[900px] h-full rounded-lg overflow-hidden shadow-lg bg-[#111] text-white relative transition-all duration-500">
                               {/* LADO IZQUIERDO */}
                               <div className="flex-col grid p-3 w-[30%] z-10 transition-all duration-500 ease-in-out">
-                                <div className="w-full flex justify-center">
+                                <div className="flex mt-[80px] ml-5 w-full items-center justify-center">
                                   <img
                                     key={hoveredTitle + "-logo"} // Fuerza re-render para animar
                                     src={gameDetails[hoveredTitle]?.svgTitle}
                                     alt={`${hoveredTitle} logo`}
-                                    className="w-[200px] mt-5 ml-5 object-contain h-auto opacity-0 animate-fade-in"
+                                    className="w-[210px] object-contain h-auto animate-fade-in"
                                   />
                                 </div>
-                                <div className="flex-col mt-4 text-center w-full">
+                                <div className="flex flex-col mb-4 ml-5  text-center items-end justify-end w-full">
                                   <div
                                     key={hoveredTitle + "-desc"}
                                     className="text-[12px] leading-[15px] font-mark mt-1 opacity-0 animate-fade-in"
@@ -472,8 +472,16 @@ function App() {
                 <img className='w-[25px] h-[30px]' src={LogoArcaneMini} />
               </div>
             </div>
-            <h1 className='text-xl font-bold hidden'>Mi Encabezado</h1>
-            {/* puedes agregar más contenido aquí */}
+            <div className='flex gap-[2px] items-center justify-end'>
+              <div className=' border-b-4 rounded-b-[1.5px]  pb-3 mt-5 border-transparent hover:border-white transition-colors'>
+                <p className='font-mark font-[500] text-[14px] hover:bg-gray-400/20 hover:rounded-lg py-2 px-4.5'>NOTICIAS</p>
+              </div>
+              <div className='border-b-4 rounded-b-[1.5px]  pb-3 mt-5 border-transparent hover:border-white transition-colors'>
+                <p className='font-mark font-[500] text-[14px] hover:bg-gray-400/20 hover:rounded-lg py-2 px-4.5'>
+                  CREADOR DE PERSONAJES
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
