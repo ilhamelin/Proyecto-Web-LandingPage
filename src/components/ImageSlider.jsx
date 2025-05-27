@@ -76,9 +76,6 @@ const ImageSlider = () => {
         return () => slider.removeEventListener('scroll', updateScrollButtons);
     }, []);
 
-
-
-
     return (
         <div data-testid="image-slider" className="w-full h-auto overflow-hidden scrollbar-hide my-2 pb-4 bg-gradient-to-t from-black/90">
             {/* Botones de navegación arriba del slider */}
@@ -115,9 +112,8 @@ const ImageSlider = () => {
                     </svg>
                 </button>
             </div>
-
             {/* Carrusel */}
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-2 ml-2">
                 <div
                     ref={sliderRef}
                     className="flex overflow-x-auto scrollbar-hide scroll-smooth items-center gap-3 px-10 pt-3 pb-3"
@@ -125,7 +121,7 @@ const ImageSlider = () => {
                     {images.map((image, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 w-[18.5%] sm:w-[25%] md:w-[20%] lg:w-[18%]"
+                            className="flex-shrink-0 w-[80%] sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]"
                             ref={index === 0 ? imageRef : null}
                             onClick={() => handleImageClick(index, image.link)}
                         >
@@ -141,10 +137,15 @@ const ImageSlider = () => {
                     ))}
                 </div>
             </div>
-
             {videoUrl && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black/80 z-50 flex justify-center items-center">
-                    <div className="relative w-[80%] h-[80%]">
+                <div
+                    className="fixed top-0 left-0 w-full h-full bg-black/80 z-30 flex justify-center items-center"
+                    onClick={() => setVideoUrl(null)} // Cierra al hacer clic fuera
+                >
+                    <div
+                        className="relative w-[85%] h-[100%]"
+                        onClick={(e) => e.stopPropagation()} // No cierra si haces clic dentro
+                    >
                         <iframe
                             className="w-full h-full rounded-lg"
                             src={videoUrl.replace("watch?v=", "embed/")}
@@ -155,7 +156,7 @@ const ImageSlider = () => {
                         ></iframe>
                         <button
                             onClick={() => setVideoUrl(null)}
-                            className="absolute -top-0 -right-12 border-none rounded-[3px] text-[15px] text-white bg-opacity-50 px-3 py-1 bg-[#3D528F]"
+                            className="absolute top-2 -right-[120px] border-none rounded-[3px] text-[18px] text-white bg-opacity-50 px-2 py-0.5 bg-[#3D528F]"
                         >
                             ✕
                         </button>
