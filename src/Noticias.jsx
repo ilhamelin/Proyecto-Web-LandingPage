@@ -1,6 +1,8 @@
 // Noticias.jsx
 import React, { useEffect, useState } from 'react';
 
+import VideoModal from './layouts/VideoModal.jsx'
+
 
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -12,7 +14,7 @@ import imageNotice5 from './assets/image/Arcane_Fondo_Decoracion/c4115d233f64836
 import imageNotice6 from './assets/image/Arcane_Fondo_Decoracion/06fa18bf8e5e108639003324f0a6330e9e53cfc9-1536x864.webp'
 
 const Noticias = () => {
-
+    const [videoUrl, setVideoUrl] = useState(null);
 
     return (
         <div className="">
@@ -28,10 +30,12 @@ const Noticias = () => {
             <section className='relative min-h-[55rem] '>
                 <div className='mx-44 mt-10'>
                     <div className='grid grid-cols-3 gap-x-2 gap-y-5 justify-items-center'>
-                        <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
+                        <a className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'
+                            href='https://www.arcane.com/es-mx/news/announcements/arcane-hexcore-nights-in-mexico-city/'
+                        >
                             <div className='overflow-hidden transition-all duration-300'>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px]  object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice1}
                                 />
                                 <div className='absolute right-[78.9rem] top-[11.9rem]'>
@@ -57,11 +61,15 @@ const Noticias = () => {
                             <div className='text-[16px] font-[400] leading-[24px] font-inter'>
                                 Baila toda la noche con Arcane: Hexcore Nights en CDMX
                             </div>
-                        </div>
-                        <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
+                        </a>
+                        <button
+                            className='flex flex-col items-start gap-y-1 max-w-[434.328px] max-h-[438.312px]'
+                            onClick={() => setVideoUrl("https://www.youtube.com/watch?v=E2Rj2gQAyPA")}
+                        >
+
                             <div className='overflow-hidden transition-all duration-300'>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px] rounded- object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice2}
                                 />
 
@@ -81,11 +89,13 @@ const Noticias = () => {
                             <div className='text-[16px] font-[400] leading-[24px] font-inter'>
                                 "The Line" - Twenty One Pilots
                             </div>
-                        </div>
-                        <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
+                        </button>
+                        <a className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'
+                            href='https://www.hayabusafight.com/collections/arcane-boxing-gloves'
+                        >
                             <div className='overflow-hidden transition-all duration-300'>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px]  object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice3}
                                 />
                                 <div className='absolute right-[13.9rem] top-[11.9rem]'>
@@ -109,11 +119,11 @@ const Noticias = () => {
                                 Colección de Hayabusa Arcane
                             </div>
 
-                        </div>
+                        </a>
                         <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
                             <div className='overflow-hidden transition-all duration-300'>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px]  object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice4}
                                 />
                                 <div className='absolute right-[78.9rem] top-[36.4rem]'>
@@ -140,12 +150,16 @@ const Noticias = () => {
                                 Cómo transmitir el primer episodio de la T2 de Arcane en Twitch y ganar recompensas exclusivas.
                             </div>
                         </div>
-                        <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
+                        <button className='flex flex-col items-start gap-y-1 max-w-[434.328px] max-h-[438.312px]'
+                            onClick={() => setVideoUrl("https://www.youtube.com/watch?v=3jf6xOg6e7Y")}
+                        >
                             <div className='overflow-hidden transition-all duration-300'>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px]  object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice5}
+                                    alt='Imagen Noticia'
                                 />
+
                             </div>
                             <div className='flex gap-1 mt-3 font-inter '>
                                 <p className='font-[700] text-[14px] leading-[22px]'>
@@ -159,11 +173,11 @@ const Noticias = () => {
                             <div className='text-[30px] font-[700] font-tungsten leading-[32px] wrap-break-word'>
                                 Come Play
                             </div>
-                        </div>
+                        </button>
                         <div className='flex flex-col gap-y-1 max-w-[434.328px] max-h-[438.312px]'>
                             <div className='overflow-hidden transition-all duration-300 '>
                                 <img
-                                    className='w-[434.328px] h-[244.297px] rounded-md object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
+                                    className='w-[434.328px] h-[244.297px]  object-cover transition-transform duration-500 hover:scale-110 cursor-pointer'
                                     src={imageNotice6}
                                 />
                                 <div className='absolute right-[13.9rem] top-[36.4rem]'>
@@ -190,6 +204,7 @@ const Noticias = () => {
                                 ¡Nos complace compartir más información sobre los eventos de Arcane para celebrar la segunda temporada!
                             </div>
                         </div>
+                        <VideoModal url={videoUrl} onClose={() => setVideoUrl(null)} />
                     </div>
                 </div>
             </section>

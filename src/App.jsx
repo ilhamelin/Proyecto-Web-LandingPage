@@ -839,6 +839,7 @@ function App() {
           </section >
         </>
       )}
+
       {/* Aquí se mostrará el contenido dinámico según la ruta */}
       <main className="">
         <Outlet />
