@@ -610,7 +610,7 @@ function App() {
               </video>
             </div>
             {/* contenido centrado */}
-            {/* Aquí puedes agregar contenido centrado en la pantalla si lo necesitas */}
+          
             <div className="relative flex-grow flex items-center justify-center ">
               {/* <!-- Span top edge / Span borde superior --> */}
               <div className='absolute z-0 top-24 left-0 ml-7 mt-7  text-blue-600'>
